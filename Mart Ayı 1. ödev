@@ -1,0 +1,42 @@
+import pandas as pd
+
+
+data = {
+    "A": [1, 2, 3, 4, 5],
+    "B": [10, 20, 30, 40, 50],
+    "C": ["a", "b", "c", "d", "e"]
+}
+df = pd.DataFrame(data)
+df
+
+# head() fonksiyonu
+df.head()
+
+# info() fonksiyonu
+df.info()
+
+# describe() fonksiyonu
+df.describe()
+
+# isnull() fonksiyonu
+df.isnull()
+
+# drop() fonksiyonu
+df.drop(columns=['B'])
+
+# fillna() fonksiyonu
+df_with_nan = df.copy()
+df_with_nan.loc[2, 'A'] = None
+df_with_nan.fillna(0)
+
+# sort_values() fonksiyonu
+df.sort_values(by='B', ascending=False)
+
+# groupby() fonksiyonu
+df.groupby('C').sum()
+
+# apply() fonksiyonu
+df['A'].apply(lambda x: x * 2)
+
+# nunique() fonksiyonu
+df.nunique()
