@@ -1,0 +1,24 @@
+notu = int(input("Notunuzu girin: "))
+if 90 <= notu <= 100:
+    print("Harf notunuz: A")
+elif 80 <= notu < 90:
+    print("Harf notunuz: B")
+elif 70 <= notu < 80:
+    print("Harf notunuz: C")
+elif 60 <= notu < 70:
+    print("Harf notunuz: D")
+elif 0 <= notu < 60:
+    print("Harf notunuz: F")
+else:
+    print("Geçersiz not girdiniz.")
+
+
+yas = int(input("Yaşınızı girin: "))
+if 0 <= yas <= 12:
+    print("Yaş grubunuz: Çocuk")
+elif 13 <= yas <= 19:
+    print("Yaş grubunuz: Genç")
+elif 20 <= yas <= 59:
+    print("Yaş grubunuz: Yetişkin")
+elif yas >= 60:
+    print("Yaş grubunuz: Yaşlı")
