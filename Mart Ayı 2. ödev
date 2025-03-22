@@ -1,0 +1,41 @@
+import numpy as np
+import pandas as pd
+
+# 1. np.array() - NumPy dizisi oluşturma
+arr = np.array([1, 2, 3, 4, 5])
+print("1. NumPy Array:", arr)
+
+# 2. np.zeros() - Belirtilen boyutta sıfır matrisi oluşturma
+zeros_arr = np.zeros((3, 3))
+print("2. Sıfır Matrisi:\n", zeros_arr)
+
+# 3. np.ones() - Belirtilen boyutta bir matrisi oluşturma
+ones_arr = np.ones((2, 4))
+print("3. Bir Matrisi:\n", ones_arr)
+
+# 4. np.eye() - Birim matris oluşturma
+eyematrix = np.eye(4)
+print("4. Birim Matris:\n", eyematrix)
+
+# 5. np.arange() - Belirtilen aralıkta sayı dizisi oluşturma
+range_arr = np.arange(0, 20, 2)
+print("5. Aralık Dizi:", range_arr)
+
+# 6. np.linspace() - İki değer arasında eşit bölünmüş değerler üretme
+linspace_arr = np.linspace(0, 10, 5)
+print("6. Linspace Dizisi:", linspace_arr)
+
+# 7. np.random.rand() - 0 ile 1 arasında rastgele değerler üreten dizi
+random_arr = np.random.rand(3, 3)
+print("7. Rastgele Dizi:\n", random_arr)
+
+# 8. np.mean() - Ortalama hesaplama
+data = np.array([5, 10, 15, 20])
+print("8. Ortalama:", np.mean(data))
+
+# 9. np.sum() - Toplam hesaplama
+print("9. Toplam:", np.sum(data))
+
+# 10. np.sqrt() - Karekök alma
+sqrt_arr = np.sqrt(data)
+print("10. Karekök Dizisi:", sqrt_arr)
