@@ -1,0 +1,30 @@
+def calculator(a, b):
+    return {
+        'toplam': a + b,
+        'fark': a - b,
+        'çarpım': a * b,
+        'bölüm': a / b if b != 0 else 'Tanımsız'
+    }
+
+num1 = float(input('Birinci sayıyı girin: '))
+num2 = float(input('İkinci sayıyı girin: '))
+result = calculator(num1, num2)
+print('Sonuçlar:', result)
+
+
+def is_palindrome(word):
+    return word == word[::-1]
+
+word = input('Bir kelime girin: ')
+if is_palindrome(word):
+    print(f'{word} bir palindromdur.')
+else:
+    print(f'{word} bir palindrom değildir.')
+
+
+def years_to_100(age):
+    return 100 - age if age < 100 else 0
+
+age = int(input('Yaşınızı girin: '))
+years_left = years_to_100(age)
+print(f'100 yaşına ulaşmanıza {years_left} yıl kaldı.')
